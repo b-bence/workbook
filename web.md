@@ -90,12 +90,12 @@
     - store passwords
     - compare and avoid duplication
     - find a specific piece of data in a database (e.g. git commits)
-- Encryption: sending data. If I’d like to send data someone encryption can protect it during transmission but the receiver can read it with a key
+- Encryption: sending data. If I’d like to send data to someone encryption can protect it during transmission but the receiver can read it with a key
 #### What encryption methods do you know?
-- Advanced Encryption Standard (AES)
-- Rivest-Shamir-Adleman (RSA)
-- Triple Data Encryption Standard (TripleDES)
-- Twofish
+- Advanced Encryption Standard (AES) - it is used worldwide. The same key is used for encrypting and decrypting. It is used for data transit
+- Rivest-Shamir-Adleman (RSA) - the encryption key is different to the decryption key. There is no official method to break the system. It is a slow method. Used in digital signatures
+- Triple Data Encryption Standard (TripleDES) - symmetric encryption. It is used for encrypting ATM PINs and UNIX passwords
+- Twofish - used by file and folder encryption softwares
 #### What hashing methods do you know?
 - SHA1 - 160 bits 40 hexadecimal charcters. It is not considered safe as attacks can crack the algorithm
 - SHA256 - 256 bits - 64 hexadecimal characters. One of the strongest hash function available. Based on SHA1. Fun fact: Bitcoin uses this algorithm
@@ -110,7 +110,7 @@
 ### Algorithms
 #### What is the difference between Stack and Queue data structure?
 - They are both ordered list of elements of similar data types. They are both linear data structures. The difference is between removing the data
-- Stack:  FILO (First in Last out) e.g. function calls, scheduling algorithms
+- Stack:  FILO (First in Last out) - data inserted first will leave last e.g. function calls, scheduling algorithms
 - Queue: FIFO (First in First out) - data inserted first will leave the queue first, e.g. ticketing
 #### What is BubbleSort? Describe the main logic of this sorting algorithm.
 - BubbleSort is a sorting algorithm
@@ -167,7 +167,7 @@ SELECT something
         WHEN something > 50 THEN ‘above fifty’
         WHEN something > 0 THEN ‘above zero’
         ELSE ‘below or equals zero’
-    END as ‘number zone’
+    END as number_zone
 FROM table_of_something
 #### How the switch-case condition works in JavaScript?
     - function basicOp(operation, value1, value2)
@@ -211,7 +211,7 @@ def switch_demo(argument):
 - lifetime: duration which the variable exists
 #### What’s the difference between const and var in JavaScript?
 - const was introduced in ES6
-- const creates a constant (value cannot be changed)  while var create a variable
+- const creates a constant (value cannot be changed)  while var creates a variable
 - var is only aware of global and function scope while const (and let) uses block level scope. Const cares about {}
 - E.g
     - var name = ‘Bence’
@@ -490,6 +490,7 @@ Example: we have
 #### What is javascript?
 - a programming language
 - on contrary to the name it is not connected to java
+- interpreted ( just in time compiled programming language)
 #### When to use AJAX? Bring examples of its usage.
 - AJAX:Asynchronous JavaScript and XML
 - It is a web development technique to send and retrieve data without refreshing the webpage
